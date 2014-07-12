@@ -1,3 +1,51 @@
+## README.md
+This fork repo is part of the Exploratory Data Analysis assignment. Developed y PanaEk Warawit on July 12, 2014. 
+
+The are 4 R scripts that would generate 4 PNG plots.
+* plot1.R  creates plot1.png
+* plot2.R  creates plot2.png
+* plot3.R  creates plot3.png
+* plot4.R  creates plot4.png
+
+Majority of these R scripts are redundant in a way that it check for the existing text or zip file. If not found, it will go download and unzip the file. 
+
+.gitignore has been setup in a way that it will exclude both Zip and Txt file - preventing it to be uploaded to github. Those input files are huge!
+
+### How to execute
+1. Set the current working directory  where the scripts are located.
+2. Source the R script
+3. Call the plot script without any parameter
+
+The plot PNG will be created at that working directory
+
+##### Example
+> setwd("c:/users/<username>/documents/github/exdata_plotting1")
+> source("plot1.R")
+> plot1()
+> trying URL 'http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
+> Content type 'application/zip' length 20640916 bytes (19.7 Mb)
+> opened URL
+> downloaded 19.7 Mb
+>
+> null device 
+>          1 
+> source("plot2.R")
+> plot2()
+> null device 
+>          1 
+> source("plot3.R")
+> plot3()
+> null device 
+          1 
+> source("plot4.R")
+> plot4()
+> null device 
+>          1 
+>
+
+Below this point is the original README.md folked from [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
+---
+
 ## Introduction
 
 This assignment uses data from
